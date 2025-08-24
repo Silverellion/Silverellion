@@ -30,8 +30,17 @@
    - DO NOT provide partial changes or isolated blocks.
 
 6. **When making changes**, wrap new code with these exact markers:
+
    ```cpp
    // Start of changes
    // ... your code here ...
    // End of changes
    ```
+
+7. Whenever generating or suggesting a file, you must **always include the full absolute file path + filename** at the very top of the response.
+
+   - Do NOT use relative paths (like `./` or `../`).
+   - Do NOT omit the filename.
+   - Format must look like this:
+
+   `/full/path/to/file/ExampleFile.py`
